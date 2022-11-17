@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IBM Project </title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}">
+</head>
+<body class="classify-body">
+    <nav>
+        <h2> <span>Nutrition</span> Image Analysis</h2>
+    </nav>
+    <main id="classify-main">
+        <div>
+            <h3>Choose an image to classify</h3>
+            <button class="button-78">Choose</button>
+            <img src="" alt="" id="image-viewer">
+        <button class="button-82-pushable" role="button">
+            <span class="button-82-shadow"></span>
+            <span class="button-82-edge"></span>
+            <span class="button-82-front text">
+            Classify
+            </span>
+        </button>
+        </div>
+        <div id="output">
+             <h3>Output</h3>
+             <p>Food is classified as:</p>
+             <div id="output-wrapper">
+                 <p id="output-result"></p>
+                 <p id="output-api-result"></p>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="{{url_for('static', filename='js/app.js')}}"></script>
+</html>
